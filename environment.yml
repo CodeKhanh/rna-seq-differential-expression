@@ -1,0 +1,14 @@
+name: rna-seq-de
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.9
+  - pandas
+  - numpy
+  - r-base>=4.2
+  - bioconductor-deseq2
+  - r-ggplot2
+  - r-ggrepel
+  - r-apeglm
+  - r-pheatmap

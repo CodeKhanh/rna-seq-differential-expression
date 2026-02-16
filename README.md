@@ -12,3 +12,22 @@ Quick start
 3. Preprocess: `python scripts/preprocess.py`
 4. Run DESeq2: `Rscript scripts/run_deseq2.R`
 5. View results: `results/plots/` and `results/tables/`
+environment.yml 
+```bash 
+
+conda env create -f environment.yml
+conda activate rna-seq-de
+
+```
+
+## Reproducibility
+
+Create environment:
+conda env create -f environment.yml
+conda activate rna-seq-de
+
+Run full pipeline:
+bash scripts/run_pipeline.sh
+
+Outputs:
+data/processed/deseq2/

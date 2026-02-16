@@ -1,4 +1,5 @@
-data/
+data/dev 
+data/processed
 *.gz
 *.txt
-.Rhistory
+.Rhistory 

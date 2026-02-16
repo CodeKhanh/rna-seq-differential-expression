@@ -2,58 +2,26 @@
 ## Dataset: GEO GSE63310
 ## Author: Jillian Higbee   
 
-Project Overview
+**Project Overview**
 This project aims to perform differential gene expression analysis on RNA-seq data from mouse mammary epithelial cell populations: Basal (control), Luminal Progenitor (LP), and Mature Luminal (ML). It was built as a beginner bioinformatics piepeline and demonstrates reproducable analysis on VSC using: 
 * Python (data cleaning)
 * R (DESeq2)
 * Bash (pipeline automation)
 * Git (version control) 
 
-** Data **
+**Data**
 Analyzed dataset: (GEO accession GSE63310) RNA-seq dataset featuring transcriptomic data from sorted mouse mammary epithelial cell populations. Raw count files were downloaded from the Arizona State University high performance computing cluster and transferred locally using FileZilla.
 
-*** Question ***
+***Question***
 How does gene expression differ between basal mammary epithelial cells and more differentiated luminal cell populations?
 
-** Repository Structure Guide **
-rna-seq-differential-expression/
-│
-├── scripts/
-│   ├── inspect_one_gsm.py
-│   ├── merge_gsm_to_matrix.py
-│   ├── deseq2.R
-│   ├── run_pipeline.sh 
-│   └── README.md
-│
-├── data/
-│   ├── processed/ 
-│       └── metadata_cleaned.csv
-│   └── README.md
-│
-├── results/
-│   ├── Basal_vs_LP_DEGs_full.csv
-│   ├── Basal_vs_LP_lfc_padj_table.csv
-│   ├── Basal_vs_ML_DEGs_full.csv
-│   ├── Basal_vs_ML_lfc_padj_table.csv
-│   ├── Combined_lfc_padj_Basal_vs_LP_vs_ML.csv
-│   ├── Heatmap_top50_Basal_vs_LP.png
-│   ├── Heatmap_top50_Basal_vs_ML.png 
-│   ├─  Interpretation.md
-│   ├── MA_Basal_vs_LP.png
-│   ├── MA_Basal_vs_ML.png
-│   ├── README.md
-│   ├── Pca.png 
-│
-├── README.md
-└── .gitignore
-
-** Statistical Methods **
+**Statistical Methods**
 * Negative binomial model (DESeq2)
 * Benjamini–Hochberg multiple testing correction
 * Log2 fold-change shrinkage using apeglm
 * Low-count gene filtering before modeling 
 
-** Reproducibility **
+**Reproducibility**
 1. Open Visual Studio Code
 2.  Select Interpreter: `~/miniconda3/envs/bio-p2/python.exe`
 3. Recreate environment:
@@ -79,3 +47,4 @@ Zhu, A., Ibrahim, J.G., Love, M.I. (2018).
 Heavy-tailed prior distributions for sequence count data: removing the noise and preserving large differences.
 Bioinformatics.
 https://doi.org/10.1093/bioinformatics/bty895
+

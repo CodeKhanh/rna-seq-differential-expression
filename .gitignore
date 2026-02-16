@@ -1,5 +1,9 @@
 data/dev 
-data/processed
+data/processed/deseq2 
+data/processed/counts_cleaned.csv
+data/processed/counts_merged_unfiltered.csv
+results/normalized_counts_vst.csv 
+
 *.gz
 *.txt
 .Rhistory 
